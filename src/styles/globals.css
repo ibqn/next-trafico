@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-200 font-rubik text-base font-normal text-primary;
+  }
+}
+
+@layer components {
+  a {
+    @apply font-rubik text-base font-medium uppercase tracking-[5%];
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+
+  .h1 {
+    @apply text-[68px] leading-none lg:text-[100px];
+  }
+
+  .h2 {
+    @apply text-[36px] leading-[140%] lg:text-[48px];
+  }
+
+  .h3 {
+    @apply mb-4 font-rubik text-[24px] font-bold uppercase leading-[40px] tracking-[10%] text-accent lg:mb-10;
+  }
+
+  .lead {
+    @apply font-rubik text-[18px] font-light leading-[40px];
+  }
+
+  .button {
+    @apply flex h-[60px] items-center gap-6 rounded-[5px] bg-accent py-[20px] px-[24px] font-rubik text-base font-medium uppercase tracking-[5%] text-white hover:bg-accent-hover;
+  }
+
+  .input {
+    @apply h-[60px] max-w-[400px] rounded-[5px] px-[40px] text-[18px] font-bold outline-none ring-1 ring-accent/50 transition placeholder:text-[18px] placeholder:font-light placeholder:text-primary focus:ring-2 focus:ring-accent focus:drop-shadow-primary;
+  }
+}

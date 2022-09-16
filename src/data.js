@@ -1,11 +1,13 @@
 import GirlImage from "images/hero/girl.svg";
 import TruckImage from "images/hero/truck.svg";
 import BoyImage from "images/hero/boy.svg";
+import LogoImgV1 from "images/header/logoV1.svg";
+import LogoImgV2 from "images/header/logoV2.svg";
 
 export const headerData = {
-  logoImgV1: "/images/header/logoV1.svg",
-  logoImgV2: "/images/header/logoV2.svg",
-  btnText: "Contact us",
+  LogoImgV1,
+  LogoImgV2,
+  buttonText: "Contact us",
 };
 
 export const navData = [

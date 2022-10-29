@@ -1,4 +1,5 @@
-import Hero from "components/hero"
+import { About } from "components/about"
+import { Hero } from "components/hero"
 import Head from "next/head"
 
 const Home = () => {
@@ -10,9 +11,11 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mx-auto max-w-[1600px] bg-page">
+      <div className="mx-auto max-w-[1600px] overflow-x-hidden bg-page">
         <Hero />
+        <About />
       </div>
+
       <section className="h-[2000px]"></section>
     </>
   )

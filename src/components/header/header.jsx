@@ -5,11 +5,13 @@ import { HiMenu, HiX } from "react-icons/hi"
 import { classNames } from "util/class-names"
 import { Nav } from "components/nav"
 import { NavMobile } from "components/nav-mobile"
+import LogoImageV1 from "./logoV1.svg"
+import LogoImageV2 from "./logoV2.svg"
 
-const Header = () => {
+export const Header = () => {
   const [header, setHeader] = useState(false)
   const [navMobile, setNavMobile] = useState(false)
-  const { buttonText, LogoImgV1, LogoImgV2 } = headerData
+  const { buttonText } = headerData
 
   const MenuIcon = navMobile ? HiX : HiMenu
 
@@ -38,9 +40,9 @@ const Header = () => {
       <Link href={"/"}>
         <a>
           {header ? (
-            <LogoImgV2 className="w-[160px]" />
+            <LogoImageV2 className="w-[160px]" />
           ) : (
-            <LogoImgV1 className="w-[212px]" />
+            <LogoImageV1 className="w-[212px]" />
           )}
         </a>
       </Link>
@@ -53,11 +55,9 @@ const Header = () => {
         onClick={() => setNavMobile(!navMobile)}
         className="z-30 cursor-pointer transition-all lg:hidden"
       >
-        <MenuIcon className=" text-4xl text-accent-hover" />
+        <MenuIcon className="text-4xl text-accent-hover" />
       </button>
       <NavMobile navMobile={navMobile} />
     </header>
   )
 }
-
-export default Header

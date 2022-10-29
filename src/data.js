@@ -1,43 +1,31 @@
-import GirlImage from "images/hero/girl.svg";
-import TruckImage from "images/hero/truck.svg";
-import BoyImage from "images/hero/boy.svg";
-import LogoImgV1 from "images/header/logoV1.svg";
-import LogoImgV2 from "images/header/logoV2.svg";
-
 export const headerData = {
-  LogoImgV1,
-  LogoImgV2,
   buttonText: "Contact us",
-};
+}
 
 export const navData = [
   { name: "About", href: "#" },
   { name: "How to", href: "#" },
   { name: "Faqs", href: "#" },
-];
+]
 
 export const heroData = {
   title: "Your awesome traffic permit consultant.",
-  BoyImage,
-  GirlImage,
-  TruckImage,
   buttonText: "Get Started",
-};
+}
 
 export const aboutData = {
   title: "About us",
   subtitle:
-    "The occupational traffic permit is one of the most important things in the company when carrying out freight transport.  In fact, it is a prerequisite for doing business traffic at all.",
+    "The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.",
   text: "How do you do when you need to obtain a commercial traffic permit for freight transport to your business?",
-  boyImg: "/images/about/boy.svg",
-};
+}
 
 export const howData = {
   title: "How to apply",
   subtitle:
     "When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.",
   girlImg: "/images/how/girl.svg",
-};
+}
 
 export const faqData = {
   pretitle: "faq",
@@ -107,7 +95,7 @@ export const faqData = {
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, voluptatum.",
     },
   ],
-};
+}
 
 export const testimonialData = {
   pretitle: "testimonials",
@@ -150,7 +138,7 @@ export const testimonialData = {
       name: "Melissa Doe",
     },
   ],
-};
+}
 
 export const footerData = {
   truckImg: "/images/footer/truck.svg",
@@ -169,4 +157,4 @@ export const footerData = {
     placeholderEmail: "Your email adddress",
     btnText: "Get Started",
   },
-};
+}

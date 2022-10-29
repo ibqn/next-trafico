@@ -1,9 +1,9 @@
-import { heroData } from "data";
-import Header from "components/header";
+import { heroData } from "data"
+import Header from "components/header"
 
-import { CgArrowLongRight } from "react-icons/cg";
+import { CgArrowLongRight } from "react-icons/cg"
 
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 
 import {
   staggerContainer,
@@ -11,10 +11,10 @@ import {
   boyAnim,
   heroTruckAnim,
   fadeInDown,
-} from "variants";
+} from "variants"
 
 const Hero = () => {
-  const { title, buttonText, GirlImage, TruckImage, BoyImage } = heroData;
+  const { title, buttonText, GirlImage, TruckImage, BoyImage } = heroData
   return (
     <section className="bg-hero bg-left-top bg-no-repeat lg:mb-80">
       <motion.div
@@ -62,7 +62,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

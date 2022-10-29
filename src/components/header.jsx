@@ -1,35 +1,33 @@
-import clsx from "clsx";
-import { headerData } from "data";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-
-import { HiMenu, HiX } from "react-icons/hi";
+import { headerData } from "data"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { HiMenu, HiX } from "react-icons/hi"
+import { classNames } from "util/class-names"
 
 const Header = () => {
-  const [header, setHeader] = useState(false);
-  const [navMobile, setNavMobile] = useState(false);
-  const { buttonText, LogoImgV1, LogoImgV2 } = headerData;
+  const [header, setHeader] = useState(false)
+  const [navMobile, setNavMobile] = useState(false)
+  const { buttonText, LogoImgV1, LogoImgV2 } = headerData
 
-  const MenuIcon = navMobile ? HiX : HiMenu;
+  const MenuIcon = navMobile ? HiX : HiMenu
 
   useEffect(() => {
     const onScroll = () => {
-      const showHeader = window.scrollY > 80;
-      setHeader(showHeader);
-    };
+      const showHeader = window.scrollY > 80
+      setHeader(showHeader)
+    }
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll)
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  });
+      window.removeEventListener("scroll", onScroll)
+    }
+  })
 
   return (
     <header
-      className={clsx(
-        { "rounded-md bg-white p-3 drop-shadow-primary": header },
-        { "py-10": !header },
+      className={classNames(
+        header ? "rounded-md bg-white p-3 drop-shadow-primary" : "py-10",
         "fixed left-0 right-0  z-20 mx-auto w-full max-w-[90vw] lg:max-w-[1120px]",
         "flex items-center justify-between",
         "transition-all duration-500"
@@ -56,7 +54,7 @@ const Header = () => {
         <MenuIcon className="text-4xl text-accent-hover" />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

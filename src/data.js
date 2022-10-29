@@ -18,7 +18,6 @@ export const navData = [
 
 export const heroData = {
   title: "Your awesome traffic permit consultant.",
-  sceneImg: "/images/hero/scene.svg",
   BoyImage,
   GirlImage,
   TruckImage,

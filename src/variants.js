@@ -6,7 +6,7 @@ export const staggerContainer = {
       delayChildren: 0.6,
     },
   },
-};
+}
 
 export const staggerTextContainer = {
   initial: {},
@@ -16,7 +16,7 @@ export const staggerTextContainer = {
       delayChildren: 0.3,
     },
   },
-};
+}
 
 export const staggerAccordionContainer = {
   initial: {},
@@ -27,7 +27,7 @@ export const staggerAccordionContainer = {
       type: "tween",
     },
   },
-};
+}
 
 export const staggerFooterContainer = {
   initial: {},
@@ -37,7 +37,7 @@ export const staggerFooterContainer = {
       delayChildren: 0.3,
     },
   },
-};
+}
 
 export const boyAnim = {
   initial: { x: -150, opacity: 0 },
@@ -46,7 +46,7 @@ export const boyAnim = {
     opacity: 1,
     transition: { type: "spring", duration: 4 },
   },
-};
+}
 
 export const girlAnim = {
   initial: { x: 150, opacity: 0 },
@@ -55,7 +55,7 @@ export const girlAnim = {
     opacity: 1,
     transition: { type: "spring", duration: 3 },
   },
-};
+}
 
 export const heroTruckAnim = {
   initial: { x: -700 },
@@ -63,7 +63,7 @@ export const heroTruckAnim = {
     x: 0,
     transition: { type: "spring", duration: 3 },
   },
-};
+}
 
 export const footerTruckAnim = {
   initial: { x: -700 },
@@ -71,7 +71,7 @@ export const footerTruckAnim = {
     x: 0,
     transition: { type: "spring", duration: 2 },
   },
-};
+}
 
 export const fadeInDown = {
   initial: {
@@ -83,7 +83,7 @@ export const fadeInDown = {
     opacity: 1,
     transition: { type: "tween", duration: 1.1 },
   },
-};
+}
 
 export const fadeInUp = {
   initial: {
@@ -95,7 +95,7 @@ export const fadeInUp = {
     opacity: 1,
     transition: { type: "tween", duration: 1.1 },
   },
-};
+}
 
 export const fadeInLeft = {
   initial: {
@@ -107,7 +107,7 @@ export const fadeInLeft = {
     opacity: 1,
     transition: { type: "tween", duration: 1.1 },
   },
-};
+}
 
 export const fadeInRight = {
   initial: {
@@ -119,4 +119,4 @@ export const fadeInRight = {
     opacity: 1,
     transition: { type: "tween", duration: 1.1 },
   },
-};
+}

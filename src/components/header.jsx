@@ -3,6 +3,8 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { HiMenu, HiX } from "react-icons/hi"
 import { classNames } from "util/class-names"
+import { Nav } from "components/nav"
+import { NavMobile } from "components/nav-mobile"
 
 const Header = () => {
   const [header, setHeader] = useState(false)
@@ -28,7 +30,7 @@ const Header = () => {
     <header
       className={classNames(
         header ? "rounded-md bg-white p-3 drop-shadow-primary" : "py-10",
-        "fixed left-0 right-0  z-20 mx-auto w-full max-w-[90vw] lg:max-w-[1120px]",
+        "fixed left-0 right-0 z-20 mx-auto w-full max-w-[90vw] lg:max-w-[1120px]",
         "flex items-center justify-between",
         "transition-all duration-500"
       )}
@@ -43,16 +45,17 @@ const Header = () => {
         </a>
       </Link>
       <div className="hidden gap-x-[96px] lg:flex">
-        <nav>nav</nav>
+        <Nav header={header} />
         <button className="button">{buttonText}</button>
       </div>
 
-      <div
+      <button
         onClick={() => setNavMobile(!navMobile)}
-        className="cursor-pointer transition-all lg:hidden"
+        className="z-30 cursor-pointer transition-all lg:hidden"
       >
-        <MenuIcon className="text-4xl text-accent-hover" />
-      </div>
+        <MenuIcon className=" text-4xl text-accent-hover" />
+      </button>
+      <NavMobile navMobile={navMobile} />
     </header>
   )
 }

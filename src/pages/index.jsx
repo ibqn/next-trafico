@@ -10,9 +10,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mx-auto max-w-[1600px] overflow-hidden bg-page">
+      <div className="mx-auto max-w-[1600px] bg-page">
         <Hero />
       </div>
+      <section className="h-[2000px]"></section>
     </>
   )
 }

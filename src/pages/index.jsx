@@ -11,7 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mx-auto max-w-[1600px] overflow-x-hidden bg-page">
+      <div className="mx-auto max-w-[1600px] overflow-hidden bg-page">
         <Hero />
         <About />
       </div>

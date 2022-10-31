@@ -10,15 +10,14 @@ export const Nav = ({ header }) => {
           const { name, href } = item
           return (
             <li key={index}>
-              <Link href={href}>
-                <a
-                  className={classNames(
-                    header ? "text-primary" : "text-white",
-                    "font-semibold transition hover:text-accent-hover"
-                  )}
-                >
-                  {name}
-                </a>
+              <Link
+                className={classNames(
+                  header ? "text-primary" : "text-white",
+                  "font-semibold transition hover:text-accent-hover"
+                )}
+                href={href}
+              >
+                {name}
               </Link>
             </li>
           )

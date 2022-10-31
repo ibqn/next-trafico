@@ -17,8 +17,8 @@ export const NavMobile = ({ navMobile }) => {
           const { name, href } = item
           return (
             <li key={index}>
-              <Link href={href}>
-                <a className="text-white hover:text-accent-hover">{name}</a>
+              <Link className="text-white hover:text-accent-hover" href={href}>
+                {name}
               </Link>
             </li>
           )

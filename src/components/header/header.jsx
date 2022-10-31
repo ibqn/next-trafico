@@ -38,13 +38,11 @@ export const Header = () => {
       )}
     >
       <Link href={"/"}>
-        <a>
-          {header ? (
-            <LogoImageV2 className="w-[160px]" />
-          ) : (
-            <LogoImageV1 className="w-[212px]" />
-          )}
-        </a>
+        {header ? (
+          <LogoImageV2 className="w-[160px]" />
+        ) : (
+          <LogoImageV1 className="w-[212px]" />
+        )}
       </Link>
       <div className="hidden gap-x-[96px] lg:flex">
         <Nav header={header} />

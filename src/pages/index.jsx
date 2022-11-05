@@ -1,5 +1,6 @@
 import { About } from "components/about"
 import { Hero } from "components/hero"
+import How from "components/how"
 import Head from "next/head"
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <div className="mx-auto max-w-[1600px] overflow-hidden bg-page">
         <Hero />
         <About />
+        <How />
       </div>
 
       <section className="h-[2000px]"></section>

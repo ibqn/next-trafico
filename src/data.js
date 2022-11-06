@@ -27,9 +27,8 @@ export const howData = {
 }
 
 export const faqData = {
-  pretitle: "faq",
+  preTitle: "faq",
   title: "Questions and Answers on Professional Traffic Permits:",
-  boyImg: "/images/faq/boy.svg",
   accordions: [
     {
       question: "What is a professional traffic permit?",

@@ -16,7 +16,14 @@ export const About = () => {
           className="flex flex-col gap-x-[20px] lg:flex-row"
         >
           <motion.div variants={fadeInUp} className="flex-1 lg:order-1">
-            <Image src={boyImage} width={576} height={480} alt="" />
+            <Image
+              src={boyImage}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="h-auto w-[576px]"
+              alt=""
+            />
           </motion.div>
           <motion.div variants={fadeInDown} className="mt-[74px] flex-1">
             <h3 className="h3">{title}</h3>

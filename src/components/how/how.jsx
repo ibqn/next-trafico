@@ -18,8 +18,10 @@ export const How = () => {
           <motion.div variants={fadeInRight} className="flex-1">
             <Image
               src={girlImage}
-              width={550}
-              height={478}
+              width="0"
+              height="0"
+              sizes="100vw"
+              className="h-auto w-[550px]"
               alt="Support girl"
             />
           </motion.div>

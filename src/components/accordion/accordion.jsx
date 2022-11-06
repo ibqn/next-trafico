@@ -16,7 +16,9 @@ export const Accordion = ({ accordion }) => {
         className="flex h-[90px] w-full cursor-pointer items-center rounded-[10px] bg-white px-[35px] drop-shadow-primary"
       >
         <div className="flex w-full items-center justify-between">
-          <p>{question}</p>
+          <p className="lead max-w-[400px] font-medium leading-snug">
+            {question}
+          </p>
           <div className="transition-all duration-500">
             {isOpen ? (
               <motion.div initial="initial" animate={{ rotate: 180 }}>

@@ -1,5 +1,6 @@
 import { aboutData } from "data"
-import BoyImage from "./boy.svg"
+import boyImage from "./boy.svg?url"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { fadeInUp, fadeInDown, staggerTextContainer } from "variants"
 
@@ -14,6 +15,9 @@ export const About = () => {
           whileInView={"animate"}
           className="flex flex-col gap-x-[20px] lg:flex-row"
         >
+          <motion.div variants={fadeInUp} className="flex-1 lg:order-1">
+            <Image src={boyImage} width={576} height={480} alt="" />
+          </motion.div>
           <motion.div variants={fadeInDown} className="mt-[74px] flex-1">
             <h3 className="h3">{title}</h3>
             <p className="lead mb-[70px] max-w-[470px]">{subtitle}</p>
@@ -25,9 +29,6 @@ export const About = () => {
                 {text}
               </p>
             </div>
-          </motion.div>
-          <motion.div variants={fadeInUp} className="flex-1">
-            <BoyImage className="h-auto max-w-[576px]" />
           </motion.div>
         </motion.div>
       </div>

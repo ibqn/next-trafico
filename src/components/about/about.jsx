@@ -6,6 +6,7 @@ import { fadeInUp, fadeInDown, staggerTextContainer } from "variants"
 
 export const About = () => {
   const { title, subtitle, text } = aboutData
+
   return (
     <section className="mb-[60px] lg:mb-[160px]">
       <div className="container mx-auto">

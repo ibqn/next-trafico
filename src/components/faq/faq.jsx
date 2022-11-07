@@ -1,7 +1,12 @@
 import { faqData } from "data"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { fadeInRight, fadeInLeft, staggerTextContainer } from "variants"
+import {
+  fadeInRight,
+  fadeInLeft,
+  staggerTextContainer,
+  staggerAccordionContainer,
+} from "variants"
 import boyImage from "./boy.svg?url"
 import { Accordion } from "components/accordion"
 
@@ -35,11 +40,16 @@ export const Faq = () => {
           </motion.div>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-x-[20px] gap-y-[10px] lg:grid-cols-2">
+        <motion.div
+          initial="initial"
+          variants={staggerAccordionContainer}
+          whileInView={"animate"}
+          className="grid grid-cols-1 gap-x-[20px] gap-y-[10px] lg:grid-cols-2"
+        >
           {accordions?.map((accordion, index) => (
             <Accordion accordion={accordion} key={index} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   )

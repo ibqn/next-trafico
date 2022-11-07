@@ -2,6 +2,7 @@ import { About } from "components/about"
 import { Faq } from "components/faq"
 import { Hero } from "components/hero"
 import How from "components/how"
+import { Testimonials } from "components/testimonials"
 import Head from "next/head"
 
 const Home = () => {
@@ -18,9 +19,8 @@ const Home = () => {
         <About />
         <How />
         <Faq />
+        <Testimonials />
       </div>
-
-      <section className="h-[2000px]"></section>
     </>
   )
 }

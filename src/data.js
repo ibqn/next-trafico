@@ -96,7 +96,7 @@ export const faqData = {
 }
 
 export const testimonialData = {
-  pretitle: "testimonials",
+  preTitle: "testimonials",
   title: "Our Awesome Clients",
   clients: [
     {
@@ -152,7 +152,7 @@ export const footerData = {
     labelName: "Name",
     placeholderName: "Your name",
     labelEmail: "Email address",
-    placeholderEmail: "Your email adddress",
+    placeholderEmail: "Your email address",
     btnText: "Get Started",
   },
 }

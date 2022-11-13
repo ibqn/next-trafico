@@ -21,7 +21,7 @@ export const Faq = () => {
           whileInView={"animate"}
           className="relative flex flex-col items-center justify-center pt-8 pb-16 lg:flex-row lg:justify-start lg:pt-16 lg:pb-32"
         >
-          <motion.div variants={fadeInRight} className="lg:w-[45%]">
+          <motion.div variants={fadeInRight} className="lg:w-2/5">
             <h3 className="h3">{preTitle}</h3>
             <h2 className="h2 mb-6 lg:mb-12">{title}</h2>
           </motion.div>

@@ -1,5 +1,6 @@
 import { About } from "components/about"
 import { Faq } from "components/faq"
+import { Footer } from "components/footer"
 import { Hero } from "components/hero"
 import How from "components/how"
 import { Testimonials } from "components/testimonials"
@@ -20,6 +21,7 @@ const Home = () => {
         <How />
         <Faq />
         <Testimonials />
+        <Footer />
       </div>
     </>
   )

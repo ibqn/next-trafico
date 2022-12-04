@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-slate-200 font-rubik text-base font-normal text-primary;
+    @apply bg-slate-200 font-rubik text-base font-normal text-primary antialiased;
   }
 }
 

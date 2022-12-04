@@ -5,6 +5,7 @@ import hillImage from "./hill.svg?url"
 
 export const Footer = () => {
   const { text } = footerData
+
   return (
     <footer className="relative bg-darkblue pt-12 lg:min-h-[738px] lg:bg-transparent lg:bg-footer lg:bg-left-bottom lg:bg-no-repeat lg:pt-0">
       <div className="container mx-auto flex flex-col justify-between lg:min-h-[738px]">

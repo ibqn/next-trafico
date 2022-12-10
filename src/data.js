@@ -139,10 +139,7 @@ export const testimonialData = {
 }
 
 export const footerData = {
-  truckImg: "/images/footer/truck.svg",
-  hillImg: "/images/footer/hill.svg",
   text: "We provide traffic management consultants so you get started quickly, contact us for a quote today!",
-  logo: "/images/footer/logo.svg",
   links: [
     { name: "about", href: "/" },
     { name: "how to", href: "/" },

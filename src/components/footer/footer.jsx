@@ -5,6 +5,8 @@ import hillImage from "./hill.svg?url"
 import logoImage from "./logo.svg?url"
 import { CgArrowLongRight } from "react-icons/cg"
 import Link from "next/link"
+import { motion } from "framer-motion"
+import { fadeInUp, footerTruckAnim, staggerFooterContainer } from "variants"
 
 export const Footer = () => {
   const { text, form, links } = footerData
@@ -14,15 +16,27 @@ export const Footer = () => {
 
   return (
     <footer className="relative bg-darkblue pt-12 lg:min-h-[738px] lg:bg-transparent lg:bg-footer lg:bg-left-bottom lg:bg-no-repeat lg:pt-0">
-      <div className="container mx-auto flex flex-col justify-between lg:min-h-[738px]">
-        <div className="absolute -top-24 -left-[6.8%] hidden lg:flex">
+      <motion.div
+        variants={staggerFooterContainer}
+        initial="initial"
+        whileInView={"animate"}
+        viewport={{ once: true }}
+        className="container mx-auto flex flex-col justify-between lg:min-h-[738px]"
+      >
+        <motion.div
+          variants={footerTruckAnim}
+          className="absolute -top-24 -left-[6.8%] hidden lg:flex"
+        >
           <Image src={truckImage} width={430} height={209} alt="Truck" />
-        </div>
+        </motion.div>
         <div className="absolute top-[22px] left-0 z-10 hidden lg:flex">
           <Image src={hillImage} width={128} height={94} />
         </div>
 
-        <div className="flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-[95px] lg:gap-y-0 lg:pr-[95px]">
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-col items-center gap-y-10 lg:flex-row lg:gap-x-[95px] lg:gap-y-0 lg:pr-[95px]"
+        >
           <div className="flex-1 border-l-[10px] border-accent py-4 text-white">
             <p className="ml-[40px] max-w-[330px] text-xl leading-[30px]">
               {text}
@@ -57,9 +71,12 @@ export const Footer = () => {
               <CgArrowLongRight className="text-[30px]" />
             </button>
           </form>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col justify-between py-[120px] lg:flex-row lg:pr-24">
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-col justify-between py-[120px] lg:flex-row lg:pr-24"
+        >
           <div className="mx-auto mb-6 lg:mx-0 lg:mb-0">
             <Link href={"/"}>
               <Image src={logoImage} width={170} height={41} />
@@ -80,8 +97,8 @@ export const Footer = () => {
               )
             })}
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </footer>
   )
 }

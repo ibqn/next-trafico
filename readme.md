@@ -9,5 +9,5 @@ pnpm create next-app
 First, run the development server:
 
 ```bash
-pnpm run dev
+pnpm dev
 ```

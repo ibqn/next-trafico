@@ -1,5 +1,7 @@
 ## Getting Started
 
+![Screenshot](screenshot.png)
+
 This has been created with
 
 ```bash

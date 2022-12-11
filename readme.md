@@ -11,3 +11,13 @@ First, run the development server:
 ```bash
 pnpm dev
 ```
+
+## Screenshots
+
+Desktop:
+
+![Desktop](screenshot-desktop.png)
+
+Mobile:
+
+![Mobile](screenshot-mobile.png)

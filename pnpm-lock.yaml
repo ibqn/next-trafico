@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/dm-serif-display': ^4.5.9
-  '@fontsource/rubik': ^4.5.11
+  '@fontsource/rubik': ^4.5.13
   '@svgr/webpack': ^6.5.1
   autoprefixer: ^10.4.13
   eslint: 8.29.0
@@ -21,7 +21,7 @@ specifiers:
 
 dependencies:
   '@fontsource/dm-serif-display': 4.5.9
-  '@fontsource/rubik': 4.5.11
+  '@fontsource/rubik': 4.5.13
   framer-motion: 7.6.19_biqbaboplfbrettd7655fr4n2y
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
@@ -1357,8 +1357,8 @@ packages:
     resolution: {integrity: sha512-SiuNT7PIHE0nHZqvdQ09NhpFygMzZPupOr7juWJlurad4jyelr1cFm7vW5JGaWhH2ZaaG7QAwpGyhKss5ii0+g==}
     dev: false
 
-  /@fontsource/rubik/4.5.11:
-    resolution: {integrity: sha512-m0/4GKOqJjF9cB4wuLgDhRdRVt35WzqI5n7SgddRjRD+yzsO0eEq/ak0ezgfbR3+f91ydDCek1+RuOVB8dNYwg==}
+  /@fontsource/rubik/4.5.13:
+    resolution: {integrity: sha512-oykfZOFcr+yHiCisHEbX9byVhr7dH4V0XvUSTFZt6xk1Qx+3FFyi8iV4iy/aiKLJOFfgfN6aPMtgifGR6hvIUA==}
     dev: false
 
   /@humanwhocodes/config-array/0.11.7:

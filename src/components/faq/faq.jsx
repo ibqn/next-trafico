@@ -19,6 +19,7 @@ export const Faq = () => {
           variants={staggerTextContainer}
           initial="initial"
           whileInView={"animate"}
+          viewport={{ once: true }}
           className="relative flex flex-col items-center justify-center pt-8 pb-16 lg:flex-row lg:justify-start lg:pt-16 lg:pb-32"
         >
           <motion.div variants={fadeInRight} className="lg:w-2/5">
@@ -44,6 +45,7 @@ export const Faq = () => {
           initial="initial"
           variants={staggerAccordionContainer}
           whileInView={"animate"}
+          viewport={{ once: true }}
           className="grid grid-cols-1 gap-x-[20px] gap-y-[10px] lg:grid-cols-2"
         >
           {accordions?.map((accordion, index) => (

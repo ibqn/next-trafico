@@ -11,6 +11,7 @@ export const Testimonials = () => {
         <motion.div
           initial="initial"
           whileInView={"animate"}
+          viewport={{ once: true }}
           variants={staggerTextContainer}
           className="flex flex-col lg:flex-row"
         >

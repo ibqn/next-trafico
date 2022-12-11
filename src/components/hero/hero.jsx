@@ -21,6 +21,7 @@ export const Hero = () => {
         variants={staggerContainer}
         initial="initial"
         animate="animate"
+        viewport={{ once: true }}
         className="container relative mx-auto min-h-[800px] lg:min-h-[950px]"
       >
         <motion.div variants={fadeInDown}>

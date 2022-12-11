@@ -13,6 +13,7 @@ export const How = () => {
           initial="initial"
           variants={staggerTextContainer}
           whileInView={"animate"}
+          viewport={{ once: true }}
           className="flex flex-col items-center gap-x-10 lg:flex-row"
         >
           <motion.div variants={fadeInRight} className="flex-1">

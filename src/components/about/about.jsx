@@ -14,6 +14,7 @@ export const About = () => {
           variants={staggerTextContainer}
           initial="initial"
           whileInView={"animate"}
+          viewport={{ once: true }}
           className="flex flex-col gap-x-[20px] lg:flex-row"
         >
           <motion.div variants={fadeInUp} className="flex-1 lg:order-1">

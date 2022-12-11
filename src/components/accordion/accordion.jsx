@@ -10,7 +10,11 @@ export const Accordion = ({ accordion }) => {
   const { question, answer } = accordion
 
   return (
-    <motion.div variants={fadeInRight} className="max-w-[550px]">
+    <motion.div
+      variants={fadeInRight}
+      viewport={{ once: true }}
+      className="max-w-[550px]"
+    >
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex h-[90px] w-full cursor-pointer items-center rounded-[10px] bg-white px-[35px] drop-shadow-primary"

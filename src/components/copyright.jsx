@@ -24,6 +24,7 @@ export const Copyright = () => {
       variants={fadeInUp}
       initial="initial"
       whileInView={"animate"}
+      viewport={{ once: true }}
       className="h-[140px] bg-white"
     >
       <div className="container mx-auto h-full">
